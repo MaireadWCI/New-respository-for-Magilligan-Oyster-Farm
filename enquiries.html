@@ -43,7 +43,7 @@
         <div class="flex-enquires">
             <section id="contact">
 
-                <form id="enquiries" method="post" action="send_email.php">
+                <form id="enquiries">
                     <!--would like this to go directly to the Email but need to create via PHP-->
                     <h2>For all enquiries contact us!</h2>
                     <label for="name" aria-label="Name Label">Name:</label>
@@ -89,8 +89,17 @@
             </li>
         </ul>
     </footer>
+    <script src="assets/js/script.js"></script>
     <!--font awesome kit-->
     <script src="https://kit.fontawesome.com/c617a545b4.js" crossorigin="anonymous"></script>
+    <!-- Add the EmailJS script -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  (function() {
+    emailjs.init("px6m6zmesXakX1q3N");  // Initialize EmailJS with your User ID
+  })();
+</script>
 
 </body>
 
