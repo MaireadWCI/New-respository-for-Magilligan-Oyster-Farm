@@ -424,7 +424,7 @@ footer {
     color: whitesmoke;
 }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 424px) {
     #message {
         width: 160px;
     }
