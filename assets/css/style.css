@@ -299,7 +299,6 @@ p {
     justify-content: space-between;
     padding: 20px;
     width: 100%;
-    max-width: 1200px;
     align-items: baseline;
 }
 
@@ -427,7 +426,12 @@ footer {
 
 @media screen and (max-width: 335px) {
     #message {
-        width: 170px;
+        width: 160px;
+    }
+
+    .flex-enquires {
+        display: inline-block;
+        padding: 0;
     }
 }
 
@@ -437,10 +441,6 @@ footer {
         display: block;
         grid-template-columns: 0;
         grid-gap: 0;
-    }
-
-    #message {
-        width: 260px;
     }
 
     #contact-background {

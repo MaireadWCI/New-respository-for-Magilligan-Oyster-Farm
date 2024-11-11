@@ -2,7 +2,7 @@ document.getElementById('enquiries').addEventListener('submit', function(event) 
     event.preventDefault();  // Prevent the form from submitting in the default way
 
     // Send email using EmailJS
-    emailjs.sendForm('service_3j6zoob', 'leonie', this)
+    emailjs.sendForm('service_4mw3khh', 'leonie', this)
       .then(function() {
         alert('Email sent successfully!');
       }, function(error) {
