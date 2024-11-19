@@ -140,7 +140,8 @@ main {
     width: 100%;
     background-color: green;
     /*to text if pic not showing that code is correct*/
-    background: url("../images/compressed-hero.jpg") no-repeat center center/cover;
+   /* background: url("../images/compressed-hero.jpg") no-repeat center center/cover;*/
+    background: url("../images/tressles-hero.jpg") no-repeat center center/cover;
     position: relative;
 }
 
