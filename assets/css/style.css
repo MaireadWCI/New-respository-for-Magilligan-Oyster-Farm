@@ -145,6 +145,8 @@ main {
     position: relative;
 }
 
+
+
 #cover-text {
     /*final rgba value sets the opacity so it is semi transparent*/
     background-color: rgba(0, 84, 147, 0.6);
@@ -294,6 +296,10 @@ p {
     line-height: 0;
 }
 
+#gallery {
+    height: 100%;
+}
+
 /*Enquiries*/
 .flex-enquires {
     display: flex;
@@ -425,6 +431,17 @@ footer {
     color: whitesmoke;
 }
 
+.hidden-heading {
+    display: none; /* Completely removes the element from the page */
+    /* OR */
+    visibility: hidden; /* Hides the element but preserves its space */
+    position: absolute;
+    left: -9999px; /* Moves the element off-screen */
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 @media screen and (max-width: 424px) {
     #message {
         width: 160px;
@@ -466,6 +483,14 @@ footer {
         margin-top: 0%;
     }
 
+}
+@media (max-width: 768px) {
+    .hero-image {
+        height: 50vh;
+        width: 50vw;
+        object-fit: cover;
+        object-position: left;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -631,4 +656,37 @@ footer {
         margin-top: 75px;
     }
 
+}
+
+#video-libary {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px 0;
+    background-color: #e6f3ff; /* Light blue background */
+}
+
+#video-libary video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    #video-libary {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
+/* Ensure full-width alignment */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 100%;
+    overflow-x: hidden;
 }

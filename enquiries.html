@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!--meta tag for search engine-->
     <meta name="description" content="Oyster Farm, Oyster, Giga, Pacific, Pacific Oyster.  ">
     <meta name="keywords"
@@ -48,13 +48,13 @@
                     <!--would like this to go directly to the Email but need to create via PHP-->
                     <h2>For all enquiries contact us!</h2>
                     <label for="name" aria-label="Name Label">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
+                    <input type="text" id="name" name="name" inputmode="text" autocomplete="name" required><br><br>
                     <label for="company-name" aria-label="Company Name Label">Company Name:</label>
-                    <input type="text" id="company-name" name="company-name"><br><br>
+                    <input type="text" id="company-name" name="company-name" inputmode="text" autocomplete="organization"><br><br>
                     <label for="email" aria-label="Email Label">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <input type="email" id="email" name="email" inputmode="email" autocomplete="email" required><br><br>
                     <label for="number" aria-label="Contact Number Label">Contact Number:</label>
-                    <input type="number" id="number" name="contact-number"><br><br>
+                    <input type="tel" id="number" name="contact-number" inputmode="tel" autocomplete="tel"><br><br>
                     <label for="message" aria-label="Message Label">Message:</label>
                     <textarea id="message" name="message" required></textarea><br><br>
                     <input type="submit" value="send" aria-label="Submit Button">
