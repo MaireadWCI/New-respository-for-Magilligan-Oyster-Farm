@@ -55,6 +55,10 @@ h3 {
     display: none;
 }
 
+#link-color {
+    color: whitesmoke;
+}
+
 /*header*/
 header {
     background-color: rgb(0, 84, 147);
@@ -658,6 +662,12 @@ footer {
 
 }
 
+#video-libary-construction {
+    color: navy;
+    margin-top: 150%;
+    background-color: whitesmoke;
+
+}
 #video-libary {
     display: grid;
     grid-template-columns: 1fr;
