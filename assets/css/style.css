@@ -146,7 +146,11 @@ main {
     /*to text if pic not showing that code is correct*/
    /* background: url("../images/compressed-hero.jpg") no-repeat center center/cover;*/
     background: url("../images/tressles-hero.jpg") no-repeat center center/cover;
-    position: relative;
+    /*position: relative;*/
+    object-fit: cover;
+    object-position: left;
+    background-size: cover;
+    background-position: initial;
 }
 
 
@@ -489,11 +493,14 @@ footer {
 
 }
 @media (max-width: 768px) {
-    .hero-image {
-        height: 50vh;
-        width: 50vw;
+    #hero-image {
+        /*height: 100vh;
+        width: 50vw;*/
         object-fit: cover;
         object-position: left;
+        background-size: contain;
+        /*background-position: center;*/
+        background-position: 60% center;
     }
 }
 
@@ -689,6 +696,7 @@ footer {
         gap: 10px;
     }
 }
+
 
 /* Ensure full-width alignment */
 body {
