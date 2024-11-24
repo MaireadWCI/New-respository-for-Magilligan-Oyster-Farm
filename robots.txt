@@ -1,0 +1,3 @@
+user-agent:
+Disallow:
+Siteamp: https://magilligan-strand-oyster-farm.com/sitemap.xml

@@ -599,7 +599,8 @@ footer {
     /*Gallery*/
     #photos {
         column-count: 4;
-        object-fit: cover;
+        object-fit: contain;
+        margin-bottom: 0%;
     }
 
 }
